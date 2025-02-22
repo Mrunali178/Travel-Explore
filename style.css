@@ -80,6 +80,7 @@ h1, h2, h3{
 }
 .btn-primary:hover{
     background-color: #ddd;
+    transform: scale(1.1);
 }
 
 .btn-secondary{
@@ -89,6 +90,7 @@ h1, h2, h3{
 }
 .btn-secondary:hover{
     background-color: #fcf3f2;
+    transform: scale(1.1);
 }
 
 
@@ -131,6 +133,7 @@ h1, h2, h3{
 }
 .navbar a:hover{
     border-bottom: 1px solid #fff;
+    transform: scale(1.2);
 }
 .navbar::after{
     content: "";
@@ -314,5 +317,5 @@ h1, h2, h3{
 
 .about-btn:hover{
     background-color: #f13b51;
-    
+    transform: scale(1.2);
 }
