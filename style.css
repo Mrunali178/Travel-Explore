@@ -52,7 +52,7 @@ h1, h2, h3{
 }
 
 .text-red{
-    color:#e63946
+    color:#e63946;
 }
 .text-light{
     color:aliceblue
@@ -202,7 +202,8 @@ h1, h2, h3{
     
     
 }
-  
+
+
 .row .img-box img {
     display: inline-block;
     width: 100%;
@@ -222,13 +223,15 @@ h1, h2, h3{
 }
 
 .box-wrapper{
+    display: flex; 
     box-shadow:  5px 5px 20px 0px #333232b7;
 }
 .box{
     width:33.3333333%;
     float:left;
-    padding:2rem;
+    padding: 3rem 3rem;
     text-align: center;
+    object-fit: cover;
 }
 .box-1, .box-3{
     background-color: #263238;
@@ -237,13 +240,15 @@ h1, h2, h3{
 .box-2{
     background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
     color:white;
+   
 }
 
-.box-wrapper::after{
+
+/* .box-wrapper::after{
     content: "";
     display:block;
     clear: both;
-}
+} */
 
 
 
@@ -383,4 +388,137 @@ h1, h2, h3{
     padding: 1rem;
     text-align: center;
     font-size: large;
+}
+
+.voicebutton {
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: rgb(67, 124, 158);
+    cursor: pointer;
+  }
+
+.voicebutton:hover {
+    color: rgb(0, 145, 255);
+  }
+
+  /* Hide hamburger on large screens */
+.hamburger {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Default nav-items for large screens */
+.nav-items {
+    float: right;
+}
+
+
+
+/* Responsive for small devices */
+
+    
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    /* Header */
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1.4rem;
+    }
+
+    .lg-heading {
+        font-size: 2rem;
+    }
+
+    .md-heading {
+        font-size: 1.5rem;
+    }
+
+    /* Navbar */
+    .navbar .nav-items {
+        float: right;
+        text-align: center;
+        margin-top: 1rem;
+        display: flex;
+        
+        
+    }
+
+    .navbar .nav-item {
+     /* display: block; */
+        padding: 0.8rem 0; 
+        margin-left: 20px; 
+    }
+
+    
+
+    /* Rows */
+    .row {
+        height: auto;
+    }
+
+    .row .img-box,
+    .row .text-box,
+    .row1 .img-box,
+    .row2 .img-box,
+    .row1 .text-box,
+    .row2 .text-box {
+        width: 100%;
+        float: none;
+    }
+
+    .row .text-box {
+        padding: 2rem;
+    }
+
+    /* About section */
+    .about-wrapper .left,
+    .about-wrapper .right {
+        width: 100%;
+        float: none;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.4em 1em;
+        font-size: 1.4rem;
+    }
+
+    .about-btn,
+    .form-btn {
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Form inputs */
+    .form input {
+        width: 80%;
+    }
+
+    /* Voice button */
+    .voicebutton {
+        font-size: 12px;
+        padding: 4px 4px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
 }
